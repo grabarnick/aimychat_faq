@@ -16,6 +16,7 @@ theme: /
 
     state: NoMatch
         event!: noMatch
+        a: Переводим на оператора...
         script:
             $response.replies = $response.replies || [];
             $response.replies
