@@ -34,17 +34,6 @@
     } ],
     "priority" : 0
   }, {
-    "id" : 143,
-    "path" : "/KnowledgeBase/FAQ.Главная/Root/Сколько тебе лет?",
-    "answer" : "Уже целых 38",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "Сколько тебе лет?"
-    } ],
-    "patterns" : [ ],
-    "priority" : 0
-  }, {
     "id" : 142,
     "path" : "/KnowledgeBase/FAQ.Главная",
     "enabled" : true,
@@ -52,6 +41,21 @@
     "phrases" : [ {
       "text" : "FAQ.Главная"
     } ],
+    "priority" : 0
+  }, {
+    "id" : 143,
+    "path" : "/KnowledgeBase/FAQ.Главная/Root/Сколько тебе лет?",
+    "answer" : "Уже целых 38",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "сколько тебе лет?"
+    }, {
+      "text" : "сколько лет"
+    }, {
+      "text" : "Сколько тебе лет?"
+    } ],
+    "patterns" : [ ],
     "priority" : 0
   } ],
   "entities" : [ ],
