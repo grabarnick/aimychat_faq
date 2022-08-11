@@ -16,7 +16,15 @@ theme: /
 
     state: NoMatch
         event!: noMatch
-        a: Я не понял. Вы сказали: {{$request.query}}
+        script:
+            $response.replies = $response.replies || [];
+            $response.replies
+                 .push({
+                    type:"switch",
+                    closeChatPhrases: "Сбросить оператора",
+                    firstMessage: "Первое сообщение",
+                    phoneNumber: "01234567",
+            });
 
     state: Match
         event!: match
