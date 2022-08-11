@@ -13,7 +13,8 @@ theme: /
             $response.replies = $response.replies || [];
             $response.replies
                  .push({
-                    type:"switch"
+                    type:"switch",
+                    destination:70
             });
 
     state: Match
