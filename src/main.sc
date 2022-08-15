@@ -19,6 +19,10 @@ theme: /
                  .push({
                     type:"switch"
             });
+            
+    state: LivechatFinished
+        event!: livechatFinished
+        a: Переводим обратно на бота...
 
     state: Match
         event!: match
