@@ -5,6 +5,10 @@ theme: /
     state: Start
         q!: $regex</start>
         a: Начнём.
+        
+    state: Hello
+        intent!: /привет
+        a: Добрый день, человек!
 
     state: NoMatch
         event!: noMatch
