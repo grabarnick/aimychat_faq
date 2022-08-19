@@ -1,0 +1,9 @@
+{
+    "jaicp.global.hostname": "https://app.jaicp.com/",
+    "jaicp.project.accountId": "a.grabarnik@just-ai.com",
+    "jaicp.project.accountIdNumeric": 256760445,
+    "jaicp.project.activeProjectShortName": "xxx-256760445-Gex",
+    "jaicp.project.cailaToken": "a6cfe4da-b5d1-4167-a07b-30cea13bac03",
+    "jaicp.project.botId": "256760445-xxx-256760445-Gex-20939852595",
+    "jaicp.project.widgetScript": "<script src=\"https://app.jaicp.com/chatwidget/FBLxyNwJ:bd75919fcbbede229a0cfaaa6996c94beecd34af/justwidget.js\" async></script>"
+}
