@@ -48,9 +48,15 @@ theme: /
         
         state: good
             a: Рады, что смогли вам помочь!
+            script:
+                $analytics.setSessionLabel("Запрос удовлетворен");
+                $analytics.setSessionResult("Положительно");
             
         state: bad
             a: Спасибо за отзыв! Будем стараться улучшить качество обслуживания!
+            script:
+                $analytics.setSessionLabel("Провал");
+                $analytics.setSessionResult("Отрицательно");
             
 
     state: Match
