@@ -42,6 +42,9 @@ theme: /
         
     state: NPS
         a: Пожалуйста, оцените качество обслуживания:
+        script:
+            $analytics.setSessionLabel("Нет оценки");
+            $analytics.setSessionResult("Нет оценки");
         buttons:
             "👍" -> ./good
             "👎" -> ./bad
