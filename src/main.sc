@@ -4,15 +4,16 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        a: Начнём.
+        a: Вас приветствует служба поддержки! 
+        a: Введите, пожалуйста, ваш вопрос:
         
     state: Hello
         intent!: /привет
-        a: Добрый день, человек!
+        a: Введите, пожалуйста, ваш вопрос:
     
     state: HR
         intent!: /HR служба
-        a: HR служба приветствует вас! Сейчас переведём на оператора
+        a: HR служба на связи! Сейчас переведём на оператора
         script:
             $response.replies = $response.replies || [];
             $response.replies
@@ -26,6 +27,23 @@ theme: /
                         
                     }
             });
+        
+        state: Увольнение
+            intent!: /HR служба/хочу уволиться
+            a: Подождите немного, сейчас с вами свяжется наш сотрудник.
+            script:
+                $response.replies = $response.replies || [];
+                $response.replies
+                     .push({
+                        type:"switch",
+                        destination: 15,
+                        attributes: {                         // пречат поля
+                            "Имя": "Иван",
+                            "Фамилия": "Петров",
+                            "Должность:": "Курьер"
+                            
+                        }
+                });            
             
     state: IT
         intent!: /IT поддержка
