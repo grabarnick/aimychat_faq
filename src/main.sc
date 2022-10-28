@@ -60,7 +60,24 @@ theme: /
                         "Должность:": "Менеджер"
                         
                     }                    
-            });            
+            });
+        state: пожар
+            intent!: /IT поддержка/загорелся компьютер
+            a: Ищите огнетушитель! Оператор сейчас подключится и даст дальнейшие указания.
+            a: Оператор подключается...
+            script:
+                $response.replies = $response.replies || [];
+                $response.replies
+                     .push({
+                        type:"switch",
+                        destination: 14,
+                        attributes: {                         // пречат поля
+                            "Имя": "Петр",
+                            "Фамилия": "Иванов",
+                            "Должность:": "Менеджер"
+                            
+                        }
+                }); 
     
     state: NoMatch
         event!: noMatch
