@@ -81,7 +81,7 @@ theme: /
     
     state: NoMatch
         event!: noMatch
-        a: Переводим на оператора...
+        a: Оператор завершил диалог. Переводим на оператора...
         script:
             $response.replies = $response.replies || [];
             $response.replies
