@@ -81,7 +81,7 @@ theme: /
     
     state: NoMatch
         event!: noMatch
-        a: Оператор завершил диалог. Переводим на оператора...
+        a: Переводим на оператора...
         script:
             $response.replies = $response.replies || [];
             $response.replies
@@ -92,7 +92,7 @@ theme: /
             
     state: LivechatFinished
         event!: livechatFinished
-        a: Переводим обратно на бота...
+        a: Оператор завершил диалог. Переводим обратно на бота...
         go!: /NPS
     
     state: testNPS
