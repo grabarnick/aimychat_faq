@@ -38,7 +38,7 @@ theme: /
                      .push({
                         type:"switch",
                         destination: 15,
-                        theme: $context.intent,
+                        theme: "Увольнение",
                         attributes: {                         // пречат поля
                             "Имя": "Иван",
                             "Фамилия": "Петров",
