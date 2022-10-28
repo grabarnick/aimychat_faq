@@ -20,6 +20,7 @@ theme: /
                  .push({
                     type:"switch",
                     destination: 15,
+                    firstMessage: $client.history,
                     attributes: {                         // пречат поля
                         "Имя": "Иван",
                         "Фамилия": "Петров",
@@ -37,6 +38,7 @@ theme: /
                      .push({
                         type:"switch",
                         destination: 15,
+                        firstMessage: $client.history,
                         attributes: {                         // пречат поля
                             "Имя": "Иван",
                             "Фамилия": "Петров",
@@ -54,6 +56,7 @@ theme: /
                  .push({
                     type:"switch",
                     destination: 14,
+                    firstMessage: $client.history,
                     attributes: {                         // пречат поля
                         "Имя": "Петр",
                         "Фамилия": "Иванов",
@@ -71,6 +74,7 @@ theme: /
                      .push({
                         type:"switch",
                         destination: 14,
+                        firstMessage: $client.history,
                         attributes: {                         // пречат поля
                             "Имя": "Петр",
                             "Фамилия": "Иванов",
