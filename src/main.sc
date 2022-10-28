@@ -49,7 +49,7 @@ theme: /
             
     state: IT
         intent!: /IT поддержка
-        a: HR служба приветствует вас! Сейчас переведём на оператора
+        a: IT поддержка приветствует вас! Сейчас переведём на оператора
         script:
             $response.replies = $response.replies || [];
             $response.replies
