@@ -20,7 +20,7 @@ theme: /
                  .push({
                     type:"switch",
                     destination: 15,
-                    theme: $context.intent,
+                    theme: "Отдел персонала",
                     attributes: {                         // пречат поля
                         "Имя": "Иван",
                         "Фамилия": "Петров",
@@ -56,7 +56,7 @@ theme: /
                  .push({
                     type:"switch",
                     destination: 14,
-                    theme: $context.intent,
+                    theme: "IT подержка",
                     attributes: {                         // пречат поля
                         "Имя": "Петр",
                         "Фамилия": "Иванов",
@@ -74,7 +74,7 @@ theme: /
                      .push({
                         type:"switch",
                         destination: 14,
-                        theme: $context.intent,
+                        theme: "Пожар",
                         attributes: {                         // пречат поля
                             "Имя": "Петр",
                             "Фамилия": "Иванов",
