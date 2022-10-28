@@ -9,7 +9,41 @@ theme: /
     state: Hello
         intent!: /привет
         a: Добрый день, человек!
-
+    
+    state: HR
+        intent!: /HR служба
+        a: HR служба приветствует вас! Сейчас переведём на оператора
+        script:
+            $response.replies = $response.replies || [];
+            $response.replies
+                 .push({
+                    type:"switch",
+                    destination: 15,
+                    attributes: {                         // пречат поля
+                        "Имя": "Иван",
+                        "Фамилия": "Петров",
+                        "Должность:", "Курьер"
+                        
+                    }
+            });
+            
+    state: IT
+        intent!: /IT поддержка
+        a: HR служба приветствует вас! Сейчас переведём на оператора
+        script:
+            $response.replies = $response.replies || [];
+            $response.replies
+                 .push({
+                    type:"switch",
+                    destination: 14,
+                    attributes: {                         // пречат поля
+                        "Имя": "Петр",
+                        "Фамилия": "Иванов",
+                        "Должность:", "Курьер"
+                        
+                    }                    
+            });            
+    
     state: NoMatch
         event!: noMatch
         a: Переводим на оператора...
@@ -20,16 +54,6 @@ theme: /
                     type:"switch"
             });
             
-    state: Group2
-        q!: группа 2
-        a: Переводим на Вторую линюю...
-        script:
-            $response.replies = $response.replies || [];
-            $response.replies
-                 .push({
-                    type:"switch",
-                    destination: 72
-            });            
             
     state: LivechatFinished
         event!: livechatFinished

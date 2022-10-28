@@ -1,7 +1,7 @@
 {
   "project" : {
-    "id" : "bot_agent-1000019-CjJ",
-    "name" : "bot_agent-1000019-CjJ",
+    "id" : "aimychat_test-122987148-Pke",
+    "name" : "aimychat_test-122987148-Pke",
     "folder" : "/jaicp"
   },
   "settings" : {
@@ -16,34 +16,39 @@
     "shared" : false
   },
   "intents" : [ {
-    "id" : 140,
     "path" : "/пока",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
       "text" : "пока"
     } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
     "priority" : 0
   }, {
-    "id" : 141,
     "path" : "/привет",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
       "text" : "привет"
     } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
     "priority" : 0
   }, {
-    "id" : 142,
     "path" : "/KnowledgeBase/FAQ.Главная",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
       "text" : "FAQ.Главная"
     } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
     "priority" : 0
   }, {
-    "id" : 143,
     "path" : "/KnowledgeBase/FAQ.Главная/Root/Сколько тебе лет?",
     "answer" : "Уже целых 38",
     "enabled" : true,
@@ -55,10 +60,12 @@
     }, {
       "text" : "Сколько тебе лет?"
     } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "id" : 174,
     "path" : "/KnowledgeBase/FAQ.Главная/Root/Как заблокировать карту?",
     "answer" : "Для блокировки карты позвоните по номеру 8 800 111 22 33",
     "enabled" : true,
@@ -66,6 +73,65 @@
     "phrases" : [ {
       "text" : "Как заблокировать карту?"
     } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/HR служба/хочу уволиться",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "хочу уволиться"
+    }, {
+      "text" : "я устал, я ухожу"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/IT поддержка",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "сломался принтер"
+    }, {
+      "text" : "не включается компьютер"
+    }, {
+      "text" : "не работает интернет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/HR служба",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "когда придет зарплата"
+    }, {
+      "text" : "как уйти в отпуск"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/IT поддержка/загорелся компьютер",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "загорелся компьютер"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
     "patterns" : [ ],
     "priority" : 0
   } ],
