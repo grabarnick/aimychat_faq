@@ -6,7 +6,20 @@ theme: /
         q!: $regex</start>
         a: Вас приветствует служба поддержки! 
         a: Введите, пожалуйста, ваш вопрос:
-        
+    
+    state: customTest
+        q!: xxx
+        TransferToOperator:
+            titleOfCloseButton = Переключить на бота
+            messageBeforeTransfer = Вы будете переведены на оператора.
+            ignoreOffline = false
+            messageForWaitingOperator = Вам ответит первый освободившийся оператор.
+            noOperatorsOnlineState = /noAgent
+            dialogCompletedState = /agentDialogOver
+            sendMessagesToOperator = true
+            sendMessageHistoryAmount = 5
+            htmlEnabled = false
+    
     state: Hello
         intent!: /привет
         a: Введите, пожалуйста, ваш вопрос:
