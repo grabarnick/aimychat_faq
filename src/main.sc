@@ -19,7 +19,12 @@ theme: /
             sendMessagesToOperator = true
             sendMessageHistoryAmount = 5
             htmlEnabled = false
+    state: noAgent
+        a: noAgent
     
+    state: agentDialogOver
+        a: dialog is over
+        
     state: Hello
         intent!: /привет
         a: Введите, пожалуйста, ваш вопрос:
