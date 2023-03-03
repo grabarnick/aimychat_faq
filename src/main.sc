@@ -6,7 +6,7 @@ theme: /
         q!: $regex</start>
         a: Вас приветствует служба поддержки! 
         a: Введите, пожалуйста, ваш вопрос: 
-        a: EDITED
+        a: EDITEDXXX
     
     state: customTest
         q!: xxx
