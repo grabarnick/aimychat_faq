@@ -5,7 +5,8 @@ theme: /
     state: Start
         q!: $regex</start>
         a: Вас приветствует служба поддержки! 
-        a: Введите, пожалуйста, ваш вопрос:
+        a: Введите, пожалуйста, ваш вопрос: 
+        a: EDITED
     
     state: customTest
         q!: xxx
@@ -19,6 +20,11 @@ theme: /
             sendMessagesToOperator = true
             sendMessageHistoryAmount = 5
             htmlEnabled = false
+            
+    state: switch
+        q!: yyy
+        script:
+            
     state: noAgent
         a: noAgent
     

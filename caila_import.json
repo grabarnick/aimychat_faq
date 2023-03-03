@@ -244,5 +244,21 @@
   }, {
     "name" : "zb.number",
     "enabled" : false
+  } ],
+  "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Главная",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Главная/Root/Сколько тебе лет?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Уже целых 38"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Главная/Root/Как заблокировать карту?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Для блокировки карты позвоните по номеру 8 800 111 22 33"
+    } ]
   } ]
 }
