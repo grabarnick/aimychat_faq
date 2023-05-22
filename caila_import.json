@@ -2,7 +2,7 @@
   "project" : {
     "id" : "aimychat_faq-256760445-AYK",
     "name" : "aimychat_faq-256760445-AYK",
-    "folder" : "/jaicp"
+    "folder" : "/platform"
   },
   "settings" : {
     "language" : "ru",
@@ -13,7 +13,13 @@
       "tokenizerEngine" : "mystem",
       "useShared" : false
     },
-    "shared" : false
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : false,
+      "answerValidationEnabled" : false,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
   },
   "intents" : [ {
     "path" : "/пока",
@@ -38,19 +44,8 @@
     },
     "priority" : 0
   }, {
-    "path" : "/KnowledgeBase/FAQ.Главная",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "FAQ.Главная"
-    } ],
-    "classificationRules" : {
-      "refs" : [ ]
-    },
-    "priority" : 0
-  }, {
     "path" : "/KnowledgeBase/FAQ.Главная/Root/Сколько тебе лет?",
-    "answer" : "Уже целых 38",
+    "answer" : "Ответ Кайлы",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
@@ -246,19 +241,21 @@
     "enabled" : false
   } ],
   "faq" : [ {
-    "intentPath" : "/KnowledgeBase/FAQ.Главная",
-    "replies" : [ ]
-  }, {
     "intentPath" : "/KnowledgeBase/FAQ.Главная/Root/Сколько тебе лет?",
     "replies" : [ {
       "type" : "text",
-      "text" : "Уже целых 38"
+      "text" : "Ответ из БЗ",
+      "markup" : "plain",
+      "key" : "_tza3inlc5"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Главная/Root/Как заблокировать карту?",
     "replies" : [ {
       "type" : "text",
-      "text" : "Для блокировки карты позвоните по номеру 8 800 111 22 33"
+      "text" : "Для блокировки карты позвоните по номеру 8 800 111 22 33",
+      "markup" : "plain",
+      "key" : "_yqo8vcl3c"
     } ]
-  } ]
+  } ],
+  "skills" : [ ]
 }

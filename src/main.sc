@@ -6,7 +6,7 @@ theme: /
         q!: $regex</start>
         a: Вас приветствует служба поддержки! 
         a: Введите, пожалуйста, ваш вопрос: 
-        a: EDITED222
+        a: EDITEDDD
     
     state: customTest
         q!: xxx
@@ -119,11 +119,11 @@ theme: /
             });
             
             
-    state: LivechatFinished
+    state: LivechatFinished || sessionResult = "Конец общения с оператором", sessionResultColor = "#BC3737"
         event!: livechatFinished
         a: Оператор завершил диалог. Переводим обратно на бота...
         go!: /NPS
-    
+
     state: testNPS
         q!: nps
         go!: /NPS
